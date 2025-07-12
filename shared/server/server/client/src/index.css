@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(159, 68%, 38%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Custom eco-friendly colors */
+  --eco-green: hsl(159, 68%, 38%);
+  --earth-brown: hsl(35, 65%, 35%);
+  --soft-blue: hsl(199, 89%, 48%);
+  --sage: hsl(87, 24%, 55%);
+  --warm-beige: hsl(60, 29%, 96%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(159, 68%, 38%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .eco-green {
+    @apply text-[hsl(159,68%,38%)];
+  }
+  
+  .bg-eco-green {
+    @apply bg-[hsl(159,68%,38%)];
+  }
+  
+  .earth-brown {
+    @apply text-[hsl(35,65%,35%)];
+  }
+  
+  .bg-earth-brown {
+    @apply bg-[hsl(35,65%,35%)];
+  }
+  
+  .soft-blue {
+    @apply text-[hsl(199,89%,48%)];
+  }
+  
+  .bg-soft-blue {
+    @apply bg-[hsl(199,89%,48%)];
+  }
+  
+  .sage {
+    @apply text-[hsl(87,24%,55%)];
+  }
+  
+  .bg-sage {
+    @apply bg-[hsl(87,24%,55%)];
+  }
+  
+  .warm-beige {
+    @apply text-[hsl(60,29%,96%)];
+  }
+  
+  .bg-warm-beige {
+    @apply bg-[hsl(60,29%,96%)];
+  }
+}
